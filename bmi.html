@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+</head>
+<body>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gilroy';
+        }
+
+        body, html{
+            height: 100%;
+            width: 100%;
+
+        }
+
+        body {
+            background-color: cyan;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #container {
+            height: 500px;
+            width: 400px;
+            border: 2px solid black;
+            background-color: gray;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            height: 30px;
+            width: 100px;
+            border-radius: 50px;
+            border: none;
+            margin: 10px;
+        }
+
+        #height {
+            margin: 5px;
+            height: 25px;
+            border-radius: 20px;
+            padding: 5px;
+            border: none;
+        }
+        #weight {
+            height: 25px;
+            border-radius: 20px;
+            border: none;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        #weightguide {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        #results {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #normal {
+            margin: 7px 0;
+        }
+    </style>
+    <div id="container">
+        <h2>BMI Calculator</h2>
+        <form>
+        <p><label for="">Enter height in CM:</label> <input type="text" id="height"></p>
+        <p><label for="">Enter weight in KG:</label> <input type="text" id="weight"></p>
+        <button>Calculate</button>
+        <div id="results"></div>
+        <div id="weightguide">
+        <h3>BMI weight Guide</h3>
+        <p id="under">Under weight = Less than 18.6 </p>
+        <p id="normal">Normal Range = 18.6 to 24.9 </p>
+        <p id="over">Overweight = Greater than 24.9 </p>
+    </div>
+</form>
+    </div>
+    <script src="bmi.js"></script>
+</body>
+</html>
